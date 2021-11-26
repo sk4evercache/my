@@ -4,11 +4,14 @@
     aws = {
       source = "hashicorp/aws"
       version = "3.67.0"
+
     }
   }
    
  provider "aws" {
   region = "us-east-1"
+  access_key = "AKIAWGNHOFDDAZUZRLPZ"
+  secret_key = "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"
 }
 
 # Create a VPC
