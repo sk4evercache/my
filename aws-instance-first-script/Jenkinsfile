@@ -19,7 +19,7 @@ pipeline {
             }
         }
       
-        }
+        
        
       
         stage ("terraform apply") {
@@ -30,5 +30,5 @@ pipeline {
                 '''
             }
         }
-    }
+    
 }
