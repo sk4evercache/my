@@ -3,5 +3,5 @@ variable "region" {
 }
 
 variable "ami_id" {
-  default =  "ami-0d1bf5b68307103c2"
+  default =  "ami-0c0a1cc13a52a158"
 }
