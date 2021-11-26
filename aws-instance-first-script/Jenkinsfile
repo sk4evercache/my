@@ -21,7 +21,7 @@ pipeline {
                  script{
                         dir("aws-instance-first-script")
                         {
-                            git "https://github.com/easyawslearn/Terraform-Tutorial.git"
+                            git "https://github.com/sk4evercache/my.git"
                         }
                     }
                 }
