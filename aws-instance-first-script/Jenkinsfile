@@ -12,27 +12,22 @@ pipeline {
         }
         stage ("terraform init") {
             steps {
-                sh 'terraform init'
+                sh '''
+                   cd /var/lib/jenkins/workspace/po/aws-instance-first-script
+                   terraform init
+                '''
             }
         }
-        stage ("terraform fmt") {
-            steps {
-                sh 'terraform fmt'
-            }
+      
         }
-        stage ("terraform validate") {
-            steps {
-                sh 'terraform validate'
-            }
-        }
-        stage ("terrafrom plan") {
-            steps {
-                sh 'terraform plan '
-            }
-        }
+       
+      
         stage ("terraform apply") {
             steps {
-                sh 'terraform apply --auto-approve'
+                 sh '''
+                   cd /var/lib/jenkins/workspace/po/aws-instance-first-script
+                   terraform apply -auto-approve
+                '''
             }
         }
     }
